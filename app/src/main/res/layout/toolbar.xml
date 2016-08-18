@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:background="@drawable/top_baner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/actionBarSize"
+    local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    local:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+<TableRow
+    android:id="@+id/input_layout_phone"
+    android:layout_width="fill_parent"
+    android:layout_marginTop="3dp"
+android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <trimdevelopmentcom.sos.MyTextView
+android:id="@+id/info"
+        android:layout_width="28dp"
+        android:layout_height="35dp"
+        android:padding="15dp"
+        android:gravity="center"
+        android:layout_gravity="top"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/info"/>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+<trimdevelopmentcom.sos.MyTextView
+    android:id="@+id/name_toll2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Current SOS Country"
+    android:layout_weight="1"
+
+    android:textColor="#fff"
+
+    android:gravity="center"
+    android:textSize="18dp"
+ />
+    <trimdevelopmentcom.sos.MyTextView
+        android:id="@+id/name_toll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Srilanka"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:textColor="#fff"
+        android:maxLines="2"
+        android:gravity="center"
+        android:textSize="18dp"
+        />
+    </LinearLayout>
+
+    <trimdevelopmentcom.sos.MyTextView
+        android:id="@+id/setting"
+        android:layout_width="28dp"
+        android:layout_height="35dp"
+        android:padding="15dp"
+        android:gravity="center"
+        android:layout_gravity="top"
+        android:layout_weight="1"
+        android:drawableRight="@drawable/seting"
+
+        />
+
+</TableRow>
+
+
+</android.support.v7.widget.Toolbar>

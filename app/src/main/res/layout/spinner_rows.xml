@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+  >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+
+        android:layout_height="50dp">
+
+        <ImageView
+
+            android:id="@+id/image"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:src="@drawable/flag_albania"
+            />
+        <trimdevelopmentcom.sos.MyTextView
+            android:layout_toRightOf="@+id/image"
+            android:text="Srilanka"
+            android:textColor="#111"
+            android:layout_margin="10dp"
+
+            android:id="@+id/company"
+
+            android:textSize="18dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

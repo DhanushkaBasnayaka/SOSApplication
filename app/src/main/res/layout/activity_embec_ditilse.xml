@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@drawable/home"
+    tools:context="trimdevelopmentcom.sos.Embec_ditilse">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/tollbar2" />
+    </LinearLayout>
+
+    <trimdevelopmentcom.sos.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+
+        android:layout_marginLeft="10dp"
+        android:text="Srilankan Embassy in Indiya"
+        android:id="@+id/Embass"
+        android:layout_below="@+id/linearLayout3"
+         />
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Embass"
+        android:layout_marginRight="-50dp"
+        android:layout_marginTop="30dp"
+        android:rotation="-30" >
+
+        <ImageView
+            android:id="@+id/img_embassyFlag"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:src="@drawable/flag_benin" />
+
+        <!--
+        <com.idl.embassyfinder.FrameLayoutWithBluredBackground
+            android:id="@+id/bottom_blured_layout"
+            android:layout_width="210dp"
+            android:layout_height="140dp"
+            android:background="#55000000"
+            android:layout_marginTop="5dp"
+            blurView:blurRadius="8" >
+        </com.idl.embassyfinder.FrameLayoutWithBluredBackground>
+        -->
+
+    </FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Embass"
+        android:layout_above="@+id/linearLayout">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="100dp"
+            android:id="@+id/embassyFlag"
+            android:layout_height="75dp"
+            android:src="@drawable/flag_anguilla"/>
+
+
+
+    </LinearLayout>
+        <trimdevelopmentcom.sos.MyTextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#50111111"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+               android:text="Address"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_height="wrap_content"
+                android:text="Nandana niwasa duwa timpel road kalutara south ,srilanka"
+                android:textAppearance="?android:attr/textAppearanceSmallPopupMenu"
+                android:textColor="#ffffff"
+                android:id="@+id/addres_emb"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+        <trimdevelopmentcom.sos.MyTextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#50111111"
+            android:layout_centerHorizontal="true" />
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingTop="10dp"
+
+                android:layout_height="wrap_content"
+                android:text="Local: (094)712744700   "
+                android:textAppearance="?android:attr/textAppearanceSmallPopupMenu"
+                android:textColor="#ffffff"
+                android:id="@+id/phone_local"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingBottom="10dp"
+
+                android:layout_height="wrap_content"
+                android:text="International: (094)712744700   "
+
+                android:textAppearance="?android:attr/textAppearanceSmallPopupMenu"
+                android:textColor="#ffffff"
+                android:id="@+id/phone_inter"
+                />
+
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#50111111"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Fax"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingTop="10dp"
+
+                android:layout_height="wrap_content"
+                android:text="Local: (094)712744700   "
+                android:textAppearance="?android:attr/textAppearanceSmallPopupMenu"
+                android:textColor="#ffffff"
+                android:id="@+id/fax_local"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingBottom="10dp"
+                android:layout_height="wrap_content"
+                android:text="International: (094)712744700   "
+                android:textAppearance="?android:attr/textAppearanceSmallPopupMenu"
+                android:textColor="#ffffff"
+                android:id="@+id/fax_inter"
+                />
+
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#50111111"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingTop="10dp"
+
+                android:layout_height="wrap_content"
+                android:text="Local: (094)712744700   "
+                android:textAppearance="?android:attr/textAppearanceSmallPopupMenu"
+                android:textColor="#ffffff"
+                android:id="@+id/Email"
+                android:layout_centerHorizontal="true" />
+
+
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#50111111"
+            android:layout_centerHorizontal="true" />
+    <LinearLayout
+        android:background="@drawable/footer_shadow"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+         >
+
+        <TextView
+
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="bottom"
+            android:layout_height="wrap_content"
+           android:layout_gravity="bottom"
+            android:id="@+id/Numbrs"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#fff"
+
+            android:layout_centerHorizontal="true" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp" >
+
+                    <TextView
+                        android:id="@+id/tv_policeTitl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Police"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffffff" />
+
+                    <ImageView
+                        android:id="@+id/img_policeCall"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/phone_call" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/img_police"
+                        android:layout_width="120dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/police" />
+
+                    <TextView
+                        android:id="@+id/tv_policeVal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="911"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lll1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="10dp"
+                    android:background="#ddd"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/ll"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp" >
+
+                    <TextView
+                        android:id="@+id/tv_ambulanceTitl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Ambulance"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffffff" />
+
+                    <ImageView
+                        android:id="@+id/img_ambulanceCall"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/phone_call" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/img_ambulance"
+                        android:layout_width="120dp"
+                        android:layout_height="75dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/ambulance" />
+
+                    <TextView
+                        android:id="@+id/tv_ambulanceVal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:text="911"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lll"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="10dp"
+                    android:background="#ddd"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
+
+                    <TextView
+                        android:id="@+id/tv_fireTitl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="Fire Brigade"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffffff" />
+
+                    <ImageView
+                        android:id="@+id/img_fireCall"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/phone_call" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/tv_fire"
+                        android:layout_width="120dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/fire_dit" />
+
+                    <TextView
+                        android:id="@+id/tv_fireVal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="911"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout></ScrollView>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+
+
+        <!--<include-->
+            <!--android:id="@+id/puterlbar"-->
+            <!--layout="@layout/puter_laout" />-->
+
+    </LinearLayout>
+</RelativeLayout>

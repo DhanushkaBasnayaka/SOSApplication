@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableRow
+        android:id="@+id/input_layout_phone"
+        android:layout_width="fill_parent"
+        android:background="#fff"
+
+        android:layout_height="wrap_content"
+
+        >
+        <ImageView
+
+            android:id="@+id/embce"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+
+         android:layout_margin="10dp"
+            android:src="@drawable/circl"
+            android:gravity="center"
+
+            />
+
+        <trimdevelopmentcom.sos.MyTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+
+
+            android:paddingLeft="10dp"
+            android:id="@+id/infromation"
+            android:layout_below="@+id/linearLayout3"
+            android:textColor="#111111"
+            android:gravity="left"
+            android:text="Always Wash your hands before and after treatment"/>
+
+
+
+    </TableRow>
+
+</LinearLayout>

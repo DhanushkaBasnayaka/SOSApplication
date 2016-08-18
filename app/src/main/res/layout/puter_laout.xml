@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableRow
+        android:id="@+id/input_layout_phone"
+        android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:paddingTop="5dp"
+
+        android:paddingBottom="4dp"
+
+
+        >
+
+        <trimdevelopmentcom.sos.MyTextView
+            android:id="@+id/map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/map"
+
+            android:maxLines="2"
+android:text="Near Me"
+            android:textSize="12dp"
+            android:textColor="#767474"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+
+        <trimdevelopmentcom.sos.MyTextView
+            android:textSize="12dp"
+            android:id="@+id/embce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Embassy"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/building"
+
+            android:textColor="#767474"
+
+            android:gravity="center"
+
+            />
+
+        <trimdevelopmentcom.sos.MyTextView
+            android:id="@+id/sos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SOS"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/help"
+
+            android:textColor="#767474"
+            android:textSize="12dp"
+            android:gravity="center"
+
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+
+
+            <trimdevelopmentcom.sos.MyTextView
+                android:id="@+id/notifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notification"
+
+                android:drawableTop="@drawable/paper"
+                android:textSize="12dp"
+                android:textColor="#767474"
+
+                android:gravity="center"
+
+                android:layout_alignParentTop="true"
+                 />
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:visibility="gone"
+                android:id="@+id/frameLayout"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="22dp"
+                android:layout_alignParentTop="true"
+               >
+
+                <trimdevelopmentcom.sos.MyTextView
+                    android:id="@+id/total_wishitems"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+
+                    android:background="@drawable/badges"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#fff"
+                    android:textSize="13sp"
+                    />
+            </FrameLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+        <trimdevelopmentcom.sos.MyTextView
+            android:textSize="12dp"
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Firs Aid"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/madical"
+            android:textColor="#767474"
+            android:gravity="center"
+            />
+    </TableRow>
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:layout_marginRight="@dimen/fab_margin"-->
+        <!--android:visibility="invisible"-->
+        <!--app:backgroundTint="#baa801"-->
+        <!--app:elevation="6dp"-->
+        <!--android:background="@drawable/lhite"-->
+        <!--app:pressedTranslationZ="12dp"-->
+        <!--android:src="@drawable/lhite"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_alignStart="@+id/fab1" />-->
+
+</LinearLayout>

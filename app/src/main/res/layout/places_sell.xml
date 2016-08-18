@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:id="@+id/input_layout_phone"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/roww2"
+        android:paddingBottom="2dp"
+
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/elam"
+            android:maxLines="2"
+android:layout_margin="10dp"
+            android:gravity="center"
+
+            />
+        <LinearLayout  android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+           >
+            <trimdevelopmentcom.sos.MyTextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:text="Flashlight"
+                android:textSize="18dp"
+                android:textColor="#fff"
+                android:gravity="left"
+
+                />
+            <trimdevelopmentcom.sos.MyTextView
+                android:id="@+id/addres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:maxLines="2"
+                android:drawableLeft="@drawable/addres_macker"
+                android:text="Flashlight"
+                android:textSize="14dp"
+                android:textColor="#fff"
+                android:gravity="left"
+
+                />
+        </LinearLayout>
+
+
+    </TableRow>
+    <TextView
+
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="20dp"
+        android:maxLines="2"
+        android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        android:textSize="18dp"
+        android:background="#70111111"
+        android:gravity="left"
+
+        />
+
+</LinearLayout>

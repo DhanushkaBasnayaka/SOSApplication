@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home"
+    tools:context="trimdevelopmentcom.sos.Notification_reder">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/tollbar2" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/row"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:layout_margin="5dp"
+            android:paddingLeft="10dp"
+            android:id="@+id/topick_red"
+            android:layout_below="@+id/linearLayout3"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Always Wash your hands before and after treatment"/>
+
+        <trimdevelopmentcom.sos.MyTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_margin="5dp"
+            android:textColorLink="#f7b306"
+
+            android:paddingLeft="10dp"
+            android:id="@+id/infromation_red"
+            android:layout_below="@+id/linearLayout3"
+            android:textColor="#fff"
+            android:gravity="left"
+            android:textStyle="normal"
+            android:text="Always Wash your hands before and after treatment"/>
+        <trimdevelopmentcom.sos.MyTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_margin="5dp"
+
+            android:paddingLeft="10dp"
+            android:id="@+id/weblink_red"
+            android:layout_below="@+id/linearLayout3"
+            android:textColor="#fff"
+            android:gravity="left"
+            android:textStyle="normal"
+            android:text="Always Wash your hands before and after treatment"/>
+        <trimdevelopmentcom.sos.MyTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:layout_margin="5dp"
+
+            android:paddingLeft="10dp"
+            android:id="@+id/date_red"
+            android:layout_below="@+id/linearLayout3"
+            android:textColor="#fff"
+            android:gravity="left"
+            android:textStyle="normal"
+            android:text="Date : 2016/09/14"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/date_red"
+            android:background="#ffffff"
+            android:gravity="center"
+
+            />
+        <!--</TableRow>-->
+
+    </LinearLayout>
+
+</RelativeLayout>

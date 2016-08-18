@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+    android:orientation="vertical">
+    <trimdevelopmentcom.sos.MyTextView
+    android:textSize="14dp"
+    android:padding="1dp"
+    android:id="@+id/date_send"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="03/28/2015 23:12:25"
+    android:layout_weight="1"
+    android:textColor="#111111"
+    android:gravity="left"
+    />
+
+    <trimdevelopmentcom.sos.MyTextView
+    android:textSize="14dp"
+    android:padding="1dp"
+    android:id="@+id/send_email1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Push to Dhanushkaeloaded@gmail.com was Send!"
+    android:layout_weight="1"
+    android:textColor="#111111"
+    android:gravity="left"
+    />
+
+    <trimdevelopmentcom.sos.MyTextView
+    android:textSize="14dp"
+    android:padding="1dp"
+    android:id="@+id/send_email2"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Push to Dhanushkaeloaded@gmail.com was Send!"
+    android:layout_weight="1"
+    android:textColor="#111111"
+    android:gravity="left"
+    />
+
+    <trimdevelopmentcom.sos.MyTextView
+    android:textSize="15dp"
+    android:padding="1dp"
+    android:id="@+id/send_tp_messeg"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="SMS to +94 766180751 was Send!"
+    android:layout_weight="1"
+    android:textColor="#111111"
+    android:gravity="left"
+    />
+
+    <trimdevelopmentcom.sos.MyTextView
+    android:textSize="15dp"
+    android:padding="1dp"
+    android:id="@+id/send_tp_messeg2"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="SMS to +94 766180751 was Send!"
+    android:layout_weight="1"
+    android:textColor="#111111"
+    android:gravity="left"
+    />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <trimdevelopmentcom.sos.MyTextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:textSize="16dp"
+            android:padding="1dp"
+            android:id="@+id/send_Addres"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="SMS to +94 766180751 was Send!"
+
+            android:textStyle="bold"
+            android:textColor="#111111"
+            android:gravity="left"
+            />
+
+
+    </RelativeLayout>
+</LinearLayout>

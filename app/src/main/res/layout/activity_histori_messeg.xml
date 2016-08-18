@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="trimdevelopmentcom.sos.Histori_messeg">
+    <!--<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:local="http://schemas.android.com/apk/res-auto"-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:background="@drawable/top_baner"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:minHeight="?attr/actionBarSize"-->
+
+        <!--local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+        <!--local:popupTheme="@style/ThemeOverlay.AppCompat.Light" >-->
+        <!--<TextView-->
+            <!--android:textSize="20dp"-->
+            <!--android:id="@+id/action_br"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Message History"-->
+            <!--android:layout_weight="1"-->
+
+
+            <!--android:textColor="#fff"-->
+            <!--android:gravity="center"-->
+            <!--/>-->
+
+    <!--</android.support.v7.widget.Toolbar>-->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/tollbar2" />
+    </LinearLayout>
+    <fragment
+        android:id="@+id/map_hist"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="fill_parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_height="200dp"
+        tools:context="trimdevelopmentcom.sos.Histori_messeg" />
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/listView3"
+
+        android:layout_above="@+id/textView14" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:background="#111"
+            android:layout_height="2dp"
+            android:layout_below="@+id/listView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    <trimdevelopmentcom.sos.MyTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Clear History"
+        android:id="@+id/textView14"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textColor="#ff0101"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+</LinearLayout>

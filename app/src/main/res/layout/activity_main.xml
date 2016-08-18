@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@drawable/home"
+    android:fitsSystemWindows="true"
+    tools:context="trimdevelopmentcom.sos.MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_above="@+id/tec"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </FrameLayout>
+    <trimdevelopmentcom.sos.MyTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp"
+
+android:text="Hold in Case of emergency"
+        android:textColor="#ffffff"
+        android:id="@+id/tec"
+        android:gravity="center"
+        android:layout_above="@+id/input_layout_phone"
+        />
+    <trimdevelopmentcom.sos.MyTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/tec2"
+        android:layout_marginTop="5dp"
+        android:text="Tap to send a massage or"
+        android:textColor="#ffffff"
+
+        android:gravity="center"
+        android:layout_above="@+id/tec"
+        />
+
+
+    <TableRow
+            android:id="@+id/input_layout_phone"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/roww2"
+            android:paddingBottom="5dp"
+            android:layout_height="wrap_content">
+
+        <trimdevelopmentcom.sos.MyTextView
+            android:id="@+id/elam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/elam"
+            android:maxLines="2"
+            android:text="Panci Alarm"
+            android:textSize="16dp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+            <trimdevelopmentcom.sos.MyTextView
+                android:id="@+id/compos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/compose"
+                android:maxLines="2"
+                android:text="Compass"
+                android:textSize="14dp"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:layout_weight="1"
+                />
+            <trimdevelopmentcom.sos.MyTextView
+                android:id="@+id/lhit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/lhite"
+                android:maxLines="2"
+                android:text="Flashlight"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:layout_weight="1"
+                />
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/roww2"
+            android:layout_width="fill_parent"
+            android:paddingBottom="5dp"
+            android:layout_marginBottom="15dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <trimdevelopmentcom.sos.MyTextView
+                android:id="@+id/police"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/embulens"
+                android:maxLines="2"
+                android:text="Ambulance"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:layout_weight="1"
+                />
+            <trimdevelopmentcom.sos.MyTextView
+                android:id="@+id/Ambulance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/police_fil"
+                android:maxLines="2"
+                android:text="Police"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:layout_weight="1"
+                />
+            <trimdevelopmentcom.sos.MyTextView
+                android:id="@+id/fir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/fire_home"
+                android:maxLines="2"
+
+                android:text="Fire"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:layout_weight="1"
+                />
+
+        </TableRow>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+
+
+       <!--<include-->
+            <!--android:id="@+id/puterlbar"-->
+            <!--layout="@layout/puter_laout" />-->
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/fab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lhite_on"
+        android:visibility="invisible"
+        android:layout_above="@+id/fab2"
+        android:layout_alignRight="@+id/fab2"
+        android:layout_alignEnd="@+id/fab2" />
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lhite_down"
+        android:visibility="invisible"
+
+        android:id="@+id/fab2"
+
+        android:layout_alignBottom="@+id/tec"
+        android:layout_toRightOf="@+id/textView8"
+        android:layout_toEndOf="@+id/textView8" />
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:gravity="center"
+        android:background="@drawable/sos"
+        android:id="@+id/textView8"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_above="@+id/fab1"
+        android:layout_centerHorizontal="true" />
+    <trimdevelopmentcom.sos.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:background="@drawable/count_down"
+        android:id="@+id/count"
+        android:layout_gravity="left|top"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_toLeftOf="@+id/textView8"
+        android:layout_toStartOf="@+id/textView8" />
+
+
+</RelativeLayout>

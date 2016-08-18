@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SOSApplication.iml" filepath="$PROJECT_DIR$/SOSApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sos_wear/sos_wear.iml" filepath="$PROJECT_DIR$/sos_wear/sos_wear.iml" />
+      <module fileurl="file://$PROJECT_DIR$/teleportlib/teleportlib.iml" filepath="$PROJECT_DIR$/teleportlib/teleportlib.iml" />
+    </modules>
+  </component>
+</project>
